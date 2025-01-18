@@ -1,0 +1,62 @@
+@import "../../styles/colors";
+
+.carousel {
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+
+  .carousel-content {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+
+    &__slide {
+      height: 100%;
+      min-width: 100%;
+      border-radius: 80px 80px 80px 5px;
+      user-select: none;
+      scale: 0.7;
+
+      &:hover {
+        cursor: grab;
+      }
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+
+    .active {
+      scale: 1;
+      z-index: 1;
+      box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05), 40px 40px 50px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &-action {
+    display: flex;
+    position: absolute;
+    bottom: 52px;
+    left: 52px;
+    gap: 20px;
+    align-items: center;
+
+    .custom-radio-btn {
+      width: 10px;
+      height: 10px;
+      background-color: $darkGrey;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      width: 15px;
+      height: 15px;
+      background: none;
+      border: 2px solid $darkGrey;
+    }
+  }
+}

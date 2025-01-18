@@ -1,0 +1,20 @@
+.filter {
+  margin-bottom: 72px;
+
+  &-title {
+    display: flex;
+    margin-bottom: 28px;
+    gap: 32px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 10px;
+
+
+    .active {
+      box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
+      transform: translateY(1px);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/colors";
+
+.order {
+  position: relative;
+
+  button {
+    position: absolute;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    background-color: $white;
+    padding: 30px 40px;
+    border-radius: 20px 20px 20px 5px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+
+      h2 {
+        margin-right: auto;
+      }
+
+      &>:last-child {
+        margin-left: 50px;
+        font-weight: 700;
+        width: 100px;
+        text-align: right;
+      }
+
+      img {
+        margin-right: 20px;
+        width: 60px;
+        background-color: $main;
+        border-radius: 8px;
+      }
+    }
+
+    .order__amount {
+      display: flex;
+      justify-content: space-between;
+
+      &>* {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

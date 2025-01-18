@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: center;
+  position: relative;
+
+  &__action {
+
+    color: $black;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
+    & > *:nth-child(2) {
+      font-weight: 700;
+    }
+  }
+}

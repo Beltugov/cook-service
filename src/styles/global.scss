@@ -1,0 +1,39 @@
+@import "colors";
+
+body {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+
+}
+
+img, svg {
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 20px;
+}
+

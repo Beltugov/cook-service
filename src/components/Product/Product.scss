@@ -1,0 +1,16 @@
+.product {
+  min-width: 100%;
+  margin-bottom: 150px;
+  &-block {
+
+    &__title {
+      margin-bottom: 24px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 110px;
+    }
+  }
+}

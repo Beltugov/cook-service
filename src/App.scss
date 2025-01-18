@@ -1,0 +1,21 @@
+@import "./styles/global.scss";
+@import "./styles/colors.scss";
+@import "./styles/button.scss";
+
+.App {
+  padding: 40px 375px 70px;
+  color: $black;
+  background-color: $grey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &-content {
+    flex: 1 0 auto;
+  }
+
+  .footer {
+    flex: 0 0 auto;
+  }
+}

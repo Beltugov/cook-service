@@ -1,0 +1,142 @@
+@import "../../styles/colors";
+
+.card-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 370px;
+  border: 1px solid $white;
+  transition: scale 0.6s;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 2px 2px 30px rgba($black, 0.05), 40px 40px 50px rgba($black, 0.5);
+    z-index: 1;
+
+    .action-btn {
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 6px rgba(255, 255, 255, 0.05), -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 0.8);
+
+      &:active {
+        box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0.5),inset -1px -1px 6px rgba(255, 255, 255, 0.05),inset -5px -5px 20px rgba(255, 255, 255, 0.1), inset 5px 5px 20px rgba(0, 0, 0, 0.8);
+      }
+
+      &:hover {
+        background-color: rgba($grey, 0.02);
+      }
+    }
+  }
+
+  &__like {
+    padding: 0;
+    background: none;
+    border: none;
+    position: absolute;
+    color: $white;
+    top: 15px;
+    left: 15px;
+    scale: 0.5;
+
+    &:hover {
+      scale: 0.75;
+      transition: scale 0.4s;
+      cursor: pointer;
+      fill: $white;
+    }
+  }
+
+  &__img {
+    text-align: center;
+    background-color: $main;
+  }
+
+  &-content {
+    padding: 20px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 12px;
+    }
+
+    &__info {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+
+      &-price {
+        font-weight: 700;
+      }
+    }
+
+    &__description {
+      margin-bottom: 20px;
+    }
+
+    &__action {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      cursor: auto;
+
+      .counter {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        gap: 24px;
+        font-size: 24px;
+        border: 1px solid currentColor;
+        border-radius: 30px;
+        padding: 10px 20px;
+
+        button {
+          background: none;
+          border: none;
+          font-size: 24px;
+          color: currentColor;
+          cursor: pointer;
+        }
+      }
+
+      .action-btn {
+        padding: 10px 30px;
+        border-radius: 30px;
+        width: 100%;
+        color: $main;
+        background: none;
+        cursor: pointer;
+        border: 1px solid $darkGrey;
+      }
+    }
+  }
+
+}
+
+.open {
+  color: $white;
+  background-color: $black;
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: 2px 2px 30px rgba($black, 0.05), 40px 40px 50px rgba($black, 0.5);
+  z-index: 1;
+}
+
+
+
